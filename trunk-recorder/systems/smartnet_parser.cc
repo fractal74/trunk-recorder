@@ -217,7 +217,7 @@ if (x.size()<3) {
 
 
   if (is_chan(stack[0].cmd, system) && stack[0].grp && getfreq(stack[0].cmd, system)) {
-    message.talkgroup = stack[0].full_address;
+    message.talkgroup = stack[0].address;
     message.freq      = getfreq(stack[0].cmd, system);
 
     if ((stack[1].cmd == 0x308) || (stack[1].cmd == 0x321)) {
